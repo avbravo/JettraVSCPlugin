@@ -1,6 +1,7 @@
 {
     "name": "jettravscplugin",
     "displayName": "Jettra VSC Designer",
+    "publisher": "jettra",
     "description": "Visual Designer for JettraWUI",
     "version": "1.0.0",
     "engines": {

@@ -8,13 +8,23 @@ Visual Studio Code extension for JettraWUI Visual Design.
 - **Visual Design**: Real-time visual representation of your web interface.
 - **Code Generation**: Automatically generate Java code compatible with JettraWUI framework.
 
-## Installation
+## Installation & Development
 
-1. Copy this folder to your VS Code extensions directory.
-~/.vscode/extensions
+There are two ways to run this extension:
 
-2. Run `npm install`.
-3. Press `F5` to start debugging.
+### Option 1: Development Mode (Recommended)
+1. Open this `JettraVSCPlugin` folder directly in Visual Studio Code.
+2. Run `npm install` in the terminal to ensure dependencies are ready.
+3. Press **F5** (or go to the 'Run and Debug' view and click 'Run Extension').
+4. A new VS Code window will open (Extension Development Host).
+5. In that new window, press `Ctrl+Shift+P` and search for **"Open Jettra Designer"**.
+
+### Option 2: Manual Installation
+1. Copy the entire `JettraVSCPlugin` folder to:
+   - Linux: `~/.vscode/extensions/jettra.jettravscplugin-1.0.0`
+   - Windows: `%USERPROFILE%\\.vscode\\extensions\\jettra.jettravscplugin-1.0.0`
+   - macOS: `~/.vscode/extensions/jettra.jettravscplugin-1.0.0`
+2. **Restart** Visual Studio Code completely.
 
 ## How to use
 

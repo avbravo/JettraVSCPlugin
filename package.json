@@ -1,0 +1,24 @@
+{
+    "name": "jettravscplugin",
+    "displayName": "Jettra VSC Designer",
+    "description": "Visual Designer for JettraWUI",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.60.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:jettra.openDesigner"
+    ],
+    "main": "./extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "jettra.openDesigner",
+                "title": "Open Jettra Designer"
+            }
+        ]
+    }
+}

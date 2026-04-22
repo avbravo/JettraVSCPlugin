@@ -11,6 +11,8 @@ Visual Studio Code extension for JettraWUI Visual Design.
 ## Installation
 
 1. Copy this folder to your VS Code extensions directory.
+~/.vscode/extensions
+
 2. Run `npm install`.
 3. Press `F5` to start debugging.
 

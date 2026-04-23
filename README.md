@@ -45,14 +45,21 @@ En esa nueva ventana, abre la paleta de comandos (Ctrl+Shift+P) y ejecuta: "Open
 Opción B: Instalación Permanente (Empaquetado .vsix)
 Para instalarlo de forma fija en tu VS Code principal:
 
-Instala la herramienta de empaquetado:
-bash
+# Instala la herramienta de empaquetado:
+
+
+*Actualizar npm*
+npm install -g npm@11.13.0
+
+*Instalar vsce*
 npm install -g @vscode/vsce
-mpaqueta el plugin: (desde la carpeta JettraVSCPlugin)
-bash
+
+*Empaquetar*
 vsce package
 Esto generará un archivo llamado jettravscplugin-1.0.0.vsix.
 Instala el archivo generado:
 Ve a la pestaña de Extensiones en VS Code.
 Haz clic en los tres puntos (...) en la esquina superior derecha.
 Selecciona "Install from VSIX..." y elige el archivo creado.
+
+## Ejecuta CTRL+SHIFT+P y busca "Open Jettra Designer"

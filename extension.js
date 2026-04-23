@@ -13,24 +13,24 @@ function activate(context) {
         );
 
         panel.webview.html = getWebviewContent();
-    });
 
-    panel.webview.onDidReceiveMessage(
-        message => {
-            switch (message.command) {
-                case 'generate':
-                    vscode.workspace.openTextDocument({
-                        content: message.code,
-                        language: 'java'
-                    }).then(doc => {
-                        vscode.window.showTextDocument(doc);
-                    });
-                    return;
-            }
-        },
-        undefined,
-        context.subscriptions
-    );
+        panel.webview.onDidReceiveMessage(
+            message => {
+                switch (message.command) {
+                    case 'generate':
+                        vscode.workspace.openTextDocument({
+                            content: message.code,
+                            language: 'java'
+                        }).then(doc => {
+                            vscode.window.showTextDocument(doc);
+                        });
+                        return;
+                }
+            },
+            undefined,
+            context.subscriptions
+        );
+    });
 
     context.subscriptions.push(disposable);
 }

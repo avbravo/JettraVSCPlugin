@@ -31,3 +31,28 @@ There are two ways to run this extension:
 1. Run the command `Open Jettra Designer` from the Command Palette (`Ctrl+Shift+P`).
 2. Drag components from the left sidebar to the central canvas.
 3. Click "Generate Java Code" to get the corresponding JettraWUI source code.
+
+
+
+
+. Cómo instalar JettraVSCPlugin en VS Code (Antigravity)
+Dado que estás desarrollando el plugin localmente, tienes dos formas de "instalarlo" o probarlo:
+
+Opción A: Modo Desarrollo (Recomendado para probar)
+Abre la carpeta JettraVSCPlugin en VS Code.
+Presiona F5. Esto abrirá una nueva ventana de VS Code ("Extension Development Host") con el plugin cargado.
+En esa nueva ventana, abre la paleta de comandos (Ctrl+Shift+P) y ejecuta: "Open Jettra Designer".
+Opción B: Instalación Permanente (Empaquetado .vsix)
+Para instalarlo de forma fija en tu VS Code principal:
+
+Instala la herramienta de empaquetado:
+bash
+npm install -g @vscode/vsce
+mpaqueta el plugin: (desde la carpeta JettraVSCPlugin)
+bash
+vsce package
+Esto generará un archivo llamado jettravscplugin-1.0.0.vsix.
+Instala el archivo generado:
+Ve a la pestaña de Extensiones en VS Code.
+Haz clic en los tres puntos (...) en la esquina superior derecha.
+Selecciona "Install from VSIX..." y elige el archivo creado.
